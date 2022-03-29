@@ -1,94 +1,117 @@
 body {
-    font-size: 16px;
-    border: 1px solid red;
-    margin-left: 3%;
-    margin-right: 3%;
+  font-size: 16px;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 h1 {
-    position: relative;
-    top: 4rem;
-    font-family: 'Sansita Swashed', cursive;
-    ;
+  position: relative;
+  top: 4rem;
+  font-family: "Sansita Swashed", cursive;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h3 {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h4 {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body p {
-    font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 body img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 nav {
-    display: inline-flex;
-    border: 1px solid red;
-    width: 100%;
-    justify-content: flex-end;
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 nav ul {
-    display: inline-flex;
-    list-style-type: none;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
+  display: inline-flex;
+  list-style-type: none;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
 }
 
 .profilepic-container {
-    border: 1px solid red;
-    position: absolute;
-    left: 75%;
-    bottom: 35%;
-    width: 22%;
-    height: auto;
-    overflow: hidden;
+  position: absolute;
+  left: 70%;
+  bottom: 32%;
+  width: 22%;
+  height: auto;
+  overflow: hidden;
 }
 
 nav ul li {
-    font-size: 1.2rem;
-    margin-right: 1rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
 }
 
 #skills img {
-    display: inline-block;
-    height: auto;
-    width: 3%;
-    margin-left: 2rem;
-    margin-top: 1rem;
+  display: inline-block;
+  height: auto;
+  width: 3%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  flex: 2;
 }
 
 footer img {
-    display: inline-block;
-    height: auto;
-    width: 9%;
-    margin-left: 2rem;
+  display: inline-block;
+  height: auto;
+  width: 9%;
+  flex: 1;
+  margin-left: 2rem;
 }
 
 a {
-    text-decoration: none;
-    text-transform: none;
-    color: white;
+  text-decoration: none;
+  text-transform: none;
+  color: white;
 }
 
 a:hover {
-    color: orange;
-    margin-left: 0.5rem;
+  color: orange;
+  margin-left: 0.5rem;
 }
 
 a:visited {
-    color: gray;
+  color: gray;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    display: none;
+  }
+  main #main-container {
+    margin-top: 4rem;
+  }
+  main .profilepic-container {
+    display: none;
+  }
+  footer img {
+    width: 5rem;
+    height: auto;
+    flex: 2;
+  }
+  #skills .skills-image-container img{
+    flex: 2;
+    width: 12%;
+  }
 }
