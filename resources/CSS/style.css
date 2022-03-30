@@ -176,7 +176,7 @@ figcaption{
     display: flex;
     position: absolute;
     width: 30%;
-    height: fit-content;
+    height: auto;
     flex-direction: column;
     top: 55%;
     left: 60%;
