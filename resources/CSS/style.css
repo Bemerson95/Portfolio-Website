@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h4 {
 
 body p {
   font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
 }
 
 body img {
@@ -45,13 +46,13 @@ nav ul {
   font-weight: 600;
 }
 
-.profilepic-container {
+
+#profilepic-container {
   position: absolute;
-  left: 70%;
+  left: 60%;
   bottom: 32%;
   width: 22%;
   height: auto;
-  overflow: hidden;
 }
 
 nav ul li {
@@ -60,7 +61,7 @@ nav ul li {
 }
 
 #skills img {
-  display: inline-block;
+  display: inline-flex;
   height: auto;
   width: 3%;
   margin-left: 2rem;
@@ -75,11 +76,15 @@ footer img {
   flex: 1;
   margin-left: 2rem;
 }
+#contact-info #github img{
+  width: 60%;
+}
 
 a {
   text-decoration: none;
   text-transform: none;
   color: white;
+  font-size: 1.2rem;
 }
 
 a:hover {
@@ -90,6 +95,34 @@ a:hover {
 a:visited {
   color: gray;
 }
+#profilepic-container a{
+  display: block;
+
+}
+#profilepic-container a:hover{
+  padding-left: 20px;
+  padding-bottom: 20px;
+  border: 2px solid white;
+  transition: 0.5;
+}
+#skills .skills-image-container a{
+  display: block;
+}
+#skills .skills-image-container a:hover{
+  padding-bottom: 20px;
+  border: 2px solid white;
+  transition: 0.5;
+}
+figcaption{
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+  background-color: gray;
+  padding: 1rem;
+  opacity: 67%;
+  font-family: 'Abril Fatface', cursive;
+}
+
 
 @media only screen and (min-width: 320px) and (max-width: 425px) {
   body {
@@ -102,7 +135,7 @@ a:visited {
   main #main-container {
     margin-top: 4rem;
   }
-  main .profilepic-container {
+  main #profilepic-container {
     display: none;
   }
   footer img {
@@ -115,3 +148,40 @@ a:visited {
     width: 12%;
   }
 }
+@media only screen and  (max-width: 768px) {
+  main #profilepic-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px){
+  #skills img{
+    width: 6%;
+    height: auto;
+  }
+ 
+  #profilepic-container {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    flex-direction: column;
+    top: 70%;
+    left: 60%;
+  }
+ 
+}
+@media only screen and (max-width: 1440px) {
+  
+  #profilepic-container {
+    display: flex;
+    position: absolute;
+    width: 30%;
+    height: fit-content;
+    flex-direction: column;
+    top: 55%;
+    left: 60%;
+  }
+}
+
+
+
