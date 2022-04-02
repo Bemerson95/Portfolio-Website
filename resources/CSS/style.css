@@ -1,178 +1,264 @@
 body {
-  font-size: 16px;
-  margin-left: 10%;
-  margin-right: 10%;
+    background-color: #a8dadc;
+    font-size: 16px;
 }
 
-h1 {
-  position: relative;
-  top: 4rem;
-  font-family: "Sansita Swashed", cursive;
-}
-
-h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-
-h4 {
-  font-family: "Roboto", sans-serif;
-}
-
-body p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2rem;
-}
-
-body img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-nav {
-  display: inline-flex;
-  width: 80%;
-  justify-content: flex-end;
-}
-
-nav ul {
-  display: inline-flex;
-  list-style-type: none;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-}
-#main-container{
-  margin-top: 5%;
-}
-
-#profilepic-container {
-  position: absolute;
-  left: 60%;
-  bottom: 45%;
-  width: 18%;
-  height: auto;
-}
-
-nav ul li {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-}
-
-#skills img {
-  display: inline-flex;
-  height: auto;
-  width: 3%;
-  margin-left: 2rem;
-  margin-top: 1rem;
-  flex: 2;
-}
-
-footer img {
-  display: inline-block;
-  height: auto;
-  width: 9%;
-  flex: 1;
-  margin-left: 2rem;
-}
-#contact-info #github img{
-  width: 60%;
-}
-
-a {
-  text-decoration: none;
-  text-transform: none;
-  color: white;
-  font-size: 1.2rem;
-}
-
-a:hover {
-  color: orange;
-  margin-left: 0.5rem;
-}
-
-a:visited {
-  color: gray;
-}
-#profilepic-container a{
-  display: block;
-
-}
-#profilepic-container a:hover{
-  padding-left: 20px;
-  padding-bottom: 20px;
-  border: 2px solid white;
-  transition: 0.5;
-}
-#skills .skills-image-container a{
-  display: block;
-}
-#skills .skills-image-container a:hover{
-  padding-bottom: 20px;
-  border: 2px solid white;
-  transition: 0.5;
-}
-figcaption{
-  position: absolute;
-  bottom: 5%;
-  left: 15%;
-  background-color: gray;
-  padding: 1rem;
-  opacity: 67%;
-  font-family: 'Abril Fatface', cursive;
-}
-
-
-@media only screen and (min-width: 320px) and (max-width: 425px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  nav ul {
-    display: none;
-  }
-  main #main-container {
-    margin-top: 4rem;
-  }
-  main #profilepic-container {
-    display: none;
-  }
-  footer img {
-    width: 5rem;
-    height: auto;
-    flex: 2;
-  }
-  #skills .skills-image-container img{
-    flex: 2;
-    width: 12%;
-  }
-}
-@media only screen and  (max-width: 768px) {
-  main #profilepic-container {
-    display: none;
-  }
-}
-@media only screen and (max-width: 1024px){
-  #skills img{
-    width: 6%;
-    height: auto;
-  }
- 
-  #profilepic-container {
-    display: flex;
+aside {
     position: absolute;
     width: 30%;
-    height: fit-content;
-    flex-direction: column;
-    top: 70%;
-    left: 60%;
-  }
- 
+    height: auto;
+    left: 55%;
+    bottom: 38%;
+    margin-left: 1rem;
 }
 
 
 
+.background-header .background-header-container #lake {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 500px;
+}
 
+.nav-bar {
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.nav-bar .nav-bar-list ul {
+    display: inline-flex
+}
+
+.nav-bar .nav-bar-list ul li {
+    font-family: 'Quicksand', sans-serif;
+    list-style-type: none;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    color: #07101B;
+    font-weight: 600;
+}
+
+.header .name h1 {
+    position: absolute;
+    top: 5%;
+    left: 22%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5rem;
+    color: #07101B;
+}
+
+.about-me .about-me-container {
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin-top: 7%;
+    margin-left: 20%;
+    padding: 2%;
+    background-color: #e8e8e4;
+    color: #07101B;
+    border: 4px solid #141414;
+    border-radius: 5%;
+    opacity: inherit;
+    box-shadow: 1rem;
+}
+
+.about-me-container #main-content-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.about-me-container p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.profile-img .image-container {
+    display: flex;
+    width: 50%;
+    height: 390px;
+    margin-top: 2.8rem;
+    margin-left: 25%;
+    background-image: url('../images/brennan2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #909DA2;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 8%;
+}
+
+.image-container #figcaption figcaption {
+    background-color: #909DA2;
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.current-skills .skills-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #e8e8e4;
+    color: #050303;
+    border: 4px solid #141414;
+    border-radius: 5%;
+    opacity: 2;
+    box-shadow: 1rem;
+}
+
+.current-skills .skills-container a {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.current-skills .skills-container #github {
+    background-color: #050303;
+}
+
+.current-skills .skills-container img {
+    display: block;
+    max-width: 100%;
+    height: 3rem;
+}
+
+.current-projects .projects-container {
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 36%;
+    height: 200px;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+    justify-content: flex-start;
+    padding: 2%;
+    background-color: #e8e8e4;
+    color: #050303;
+    border: 4px solid #141414;
+    border-radius: 5%;
+    opacity: 2;
+    box-shadow: 1rem;
+}
+
+.current-projects .projects-container h3 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+.current-projects .projects-container ul {
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.projects-container a {
+    font-weight: 500;
+}
+
+.projects-container a:hover {
+    margin-left: 10px;
+    margin-bottom: 4px;
+    color: #d62828;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    background-color: #e8e8e4;
+    color: #050303;
+    border: 4px solid #141414;
+    border-radius: 5%;
+    box-shadow: 1rem;
+    justify-content: space-evenly;
+}
+
+.social-media {
+    width: 30%;
+    height: auto;
+}
+
+.social-media-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: flex-start;
+
+}
+
+.social-media-container a {
+    display: flex;
+    width: 16%;
+    height: 50px;
+}
+
+.social-media-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+
+
+.social-media h4 {
+    position: relative;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.email-address h4 {
+    position: relative;
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.email-address {
+    margin-left: 3rem;
+}
+
+address a {
+    font-weight: 500;
+
+}
+
+.email-address address {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-top: 2.5rem;
+    text-align: center;
+
+}
+
+address a:hover {
+    margin-left: 10px;
+    margin-bottom: 4px;
+    color: #d62828;
+}
