@@ -264,7 +264,7 @@ address a:hover {
     color: #d62828;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
     .header .name{
         display: inline-flex;
         position: relative;
@@ -300,16 +300,18 @@ address a:hover {
         display: inline-flex;
         position: relative;
         flex-wrap: wrap;
-        width: 100%;
+        width: 85%;
         height: auto;
-        margin: 0 auto;
         overflow: scroll;
     }
     .about-me .about-me-container{
         background-color: transparent;
         border: none;
-        margin: auto;
+        margin: 0 0 ;
         text-align: left;
+    }
+    .about-me .about-me-container p{
+        font-size: 1rem;
     }
     figcaption{
         display: none;
@@ -318,7 +320,7 @@ address a:hover {
         position: relative;
         width: 100%;
         height: 200px;
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
         margin-top: 2rem;
     }
@@ -326,10 +328,10 @@ address a:hover {
         display: flex;
         position: relative;
         left: 0%;
-        align-self: center;
+        align-self: flex-start;
         flex-direction: column;
         height: auto;
-        width: 100%;
+        width: 80%;
         margin-top: 10%;
         margin-left: 0%;
     }
@@ -338,8 +340,12 @@ address a:hover {
         width: 100%;
     }
     .skills .skills-container{
+        display: inline-flex;
         background-color: transparent;
         border: none;
+    }
+    .skills .skills-container a{
+        justify-content: space-between;
     }
     .current-projects .projects-container{
         display: flex;
@@ -384,8 +390,16 @@ address a:hover {
         margin-left: 0%;
         padding-bottom: 20%;
     }
-    address{
-        font-size: small;
+    .email-address .email{
+        display: flex;
+        flex-direction: column;
+        font-size: medium;
+    }
+    .email address{
+        font-size: medium;
+        width: auto;
+        align-self: flex-start;
+        margin-left: 1rem;
     }
 
 }
