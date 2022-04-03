@@ -54,6 +54,7 @@ aside {
 .about-me .about-me-container {
     display: flex;
     width: 30%;
+    flex: 2;
     height: auto;
     margin-top: 7%;
     margin-left: 20%;
@@ -261,4 +262,133 @@ address a:hover {
     margin-left: 10px;
     margin-bottom: 4px;
     color: #d62828;
+}
+
+@media only screen and (max-width: 425px) {
+    .header .name{
+        display: inline-flex;
+        position: relative;
+        align-self: center;
+        left: 0%;
+        margin-bottom: 40%;
+        margin-left: 20%;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    h4{
+        font-size: 1.4rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    body{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .about-me{
+        display: inline-flex;
+        position: relative;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: scroll;
+    }
+    .about-me .about-me-container{
+        background-color: transparent;
+        border: none;
+        margin: auto;
+        text-align: left;
+    }
+    figcaption{
+        display: none;
+    }
+    .profile-img .image-container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+    aside{
+        display: flex;
+        position: relative;
+        left: 0%;
+        align-self: center;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+    .skills .current-skills{
+        position: relative;
+        width: 100%;
+    }
+    .skills .skills-container{
+        background-color: transparent;
+        border: none;
+    }
+    .current-projects .projects-container{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: auto;
+        text-align: start;
+    }
+    .current-projects .projects-container ul{
+        text-align: start;
+    }
+    .current-projects .projects-container h3{
+        text-align: start;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        flex-direction: column;
+    }
+    .social-media{
+        width: 100%;
+        height: auto;
+    }
+    .social-media .social-media-container{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10%;
+        width: 100%;
+        height: auto;
+    }
+    .social-media .social-media-container a{
+        width: fit-content;
+        height: 5rem;
+    }
+    .email-address{
+        text-align: start;
+        margin-left: 0%;
+        padding-bottom: 20%;
+    }
+    address{
+        font-size: small;
+    }
+
+}
+@media only screen and (max-width: 768px){
+
 }
